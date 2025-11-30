@@ -1,0 +1,218 @@
+.footer {
+  padding: 3rem 0 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+body.dark-mode .footer {
+  background: linear-gradient(180deg, rgba(26, 31, 58, 0.8) 0%, var(--dark-bg) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.light-mode .footer {
+  background: linear-gradient(180deg, rgba(241, 243, 245, 0.8) 0%, var(--light-bg) 100%);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+  .footer-brand {
+    justify-content: center;
+  }
+}
+
+.brand-initial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.brand-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+body.dark-mode .brand-text {
+  color: var(--text-primary);
+}
+
+body.light-mode .brand-text {
+  color: var(--light-text-primary);
+}
+
+.footer-tagline {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+body.dark-mode .footer-tagline {
+  color: var(--text-secondary);
+}
+
+body.light-mode .footer-tagline {
+  color: var(--light-text-secondary);
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer-social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+body.dark-mode .footer-social-icon {
+  background-color: var(--dark-card);
+  color: var(--primary-color);
+}
+
+body.light-mode .footer-social-icon {
+  background-color: var(--light-card);
+  color: var(--secondary-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.footer-social-icon:hover {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(13, 202, 240, 0.3);
+}
+
+.scroll-top-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .scroll-top-btn {
+    margin: 0 auto;
+  }
+}
+
+.scroll-top-btn:hover {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(13, 202, 240, 0.3);
+}
+
+.footer-divider {
+  margin: 2rem 0 1.5rem;
+  opacity: 0.2;
+}
+
+body.dark-mode .footer-divider {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.light-mode .footer-divider {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-copyright {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+body.dark-mode .footer-copyright {
+  color: var(--text-secondary);
+}
+
+body.light-mode .footer-copyright {
+  color: var(--light-text-secondary);
+}
+
+.footer-made-with {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+body.dark-mode .footer-made-with {
+  color: var(--text-secondary);
+}
+
+body.light-mode .footer-made-with {
+  color: var(--light-text-secondary);
+}
+
+.heart-icon {
+  color: #e74c3c;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+  
+  .footer-brand {
+    margin-bottom: 1rem;
+  }
+  
+  .scroll-top-btn {
+    margin-top: 1rem;
+  }
+}
+

@@ -1,0 +1,118 @@
+body.dark-mode .about-section {
+  background-color: var(--dark-bg);
+}
+
+body.light-mode .about-section {
+  background-color: var(--light-bg);
+}
+
+.about-subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+body.dark-mode .about-text {
+  color: var(--text-secondary);
+}
+
+body.light-mode .about-text {
+  color: var(--light-text-secondary);
+}
+
+.about-text strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+body.dark-mode .stat-card {
+  background-color: var(--dark-card);
+}
+
+body.light-mode .stat-card {
+  background-color: var(--light-card);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+}
+
+body.dark-mode .stat-card:hover {
+  background-color: var(--dark-card-hover);
+  box-shadow: 0 10px 30px rgba(13, 202, 240, 0.2);
+}
+
+body.light-mode .stat-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+body.dark-mode .stat-label {
+  color: var(--text-secondary);
+}
+
+body.light-mode .stat-label {
+  color: var(--light-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .stat-icon {
+    font-size: 2.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
