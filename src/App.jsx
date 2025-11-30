@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Education from './components/Education'
+import Certificates from './components/Certificates'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.css'
@@ -45,6 +46,7 @@ function App() {
       <Experience darkMode={darkMode} />
       <Projects darkMode={darkMode} />
       <Education darkMode={darkMode} />
+      <Certificates darkMode={darkMode} />
       <Contact darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
@@ -52,4 +54,3 @@ function App() {
 }
 
 export default App
-

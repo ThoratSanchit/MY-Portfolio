@@ -90,6 +90,16 @@ const Navigation = ({ darkMode, toggleTheme }) => {
               Education
             </Link>
             <Link 
+              to="certificates" 
+              spy={true} 
+              smooth={true} 
+              offset={-70} 
+              duration={500}
+              className="nav-link-custom"
+            >
+              Certificates
+            </Link>
+            <Link 
               to="contact" 
               spy={true} 
               smooth={true} 
@@ -114,4 +124,3 @@ const Navigation = ({ darkMode, toggleTheme }) => {
 }
 
 export default Navigation
-
